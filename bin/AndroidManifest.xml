@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unlam.arduito"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.unlam.arduito.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.unlam.arduito.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/a2_ic_rojo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.unlam.arduito" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.unlam.arduito.GCMIntentService" />
+
+        <activity
+            android:name="com.unlam.arduito.splash.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.accesos.VerAccesosActivity"
+            android:label="@string/title_activity_ver_accesos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.sensores.SensoresActivity"
+            android:label="@string/title_activity_sensores"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.camara.CamaraActivity"
+            android:label="@string/title_activity_camara"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- Single List Item View -->
+        <activity
+            android:name="com.unlam.arduito.accesos.AccesosSimpleItemActivity"
+            android:label="Accesos registrados"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.ayuda.AyudaActivity"
+            android:label="@string/title_activity_ayuda"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.ayuda.AyudaPinActivity"
+            android:label="@string/title_activity_ayuda_pin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.historial.HistorialActivity"
+            android:label="@string/title_activity_historial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.historial.HistorialSimpleItemActivity"
+            android:label="Ultimas alertas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.ayuda.AyudaArduitoActivity"
+            android:label="@string/title_activity_ayuda_arduito"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.configuracion.ConfiguracionActivity"
+            android:label="@string/title_activity_configuracion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.ayuda.AyudaKeyActivity"
+            android:label="@string/title_activity_ayuda_key"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.configuracion.ConfiguracionKeyActivity"
+            android:label="@string/title_activity_configuracion_key"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.configuracion.ConfiguracionNotificacionesActivity"
+            android:label="@string/title_activity_configuracion_notificaciones"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.camara.VisualizarCamaraActivity"
+            android:label="@string/title_activity_visualizar_camara"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.configuracion.ConfiguracionCamaraActivity"
+            android:label="@string/title_activity_configuracion_camara"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.ayuda.AyudaLoginInitActivity"
+            android:label="@string/title_activity_ayuda_login_init"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.configuracion.ConfigurarResetUsuarioActivity"
+            android:label="@string/title_activity_configurar_reset_usuario"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.sensores.SensorChartActivity"
+            android:label="@string/title_activity_sensor_chart"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.configuracion.TestNotificacionActivity"
+            android:label="@string/title_activity_test_notificacion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.AlertasSimpleItemActivity"
+            android:label="@string/title_activity_alertas_simple_item"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.configuracion.ConfiguracionGeneralActivity"
+            android:label="@string/title_activity_configuracion_general"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.login.LoginSetDomainActivity"
+            android:label="@string/title_activity_login_set_domain" >
+        </activity>
+        <activity
+            android:name="com.unlam.arduito.camara.ListarCamarasActivity"
+            android:label="@string/title_activity_listar_camaras" >
+        </activity>
+    </application>
+
+</manifest>

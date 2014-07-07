@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AyudaLoginInitActivity" >
+
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Resetear Usuario"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:text="Para acceder a la aplicación móvil fue necesario validar tu usuario, ingresando tu nombre de usuario y el código de registro. Seleccionando el siguiente botón se borrará la actual validación de tu usuario del dispositivo y será necesario volver a validarlo para utilizar la aplicación nuevamente."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonConfigResetUsuario"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="52dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Resetear Usuario Actual"
+            android:textColor="@color/boton_oscuro"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView677"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/buttonConfigResetUsuario"
+            android:layout_below="@+id/buttonConfigResetUsuario"
+            android:layout_marginTop="33dp"
+            android:text="Nota: Al seleccionar &apos;Resetear Usuario Actual&apos; y confirmar la acción, se cerrará la aplicación. Luego al volver a acceder, se pedirán los datos a validar."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/boton_oscuro"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+</RelativeLayout>

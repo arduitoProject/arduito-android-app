@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TestNotificacionActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Solicitud notificación prueba"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="24dp"
+            android:text="Puede solicitar el envío de una notificacion de prueba a su dispositivo móvil, seleccionando el siguiente botón:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/boton_oscuro"
+            android:textSize="16sp" />
+    
+           <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_below="@+id/buttonTestNotification"
+            android:layout_marginTop="36dp"
+            android:text="Aclaración: El pedido de varias notificaciones podría no resolverse e inclusive no enviarse nunca, por lo tanto es recomendable solicitar una notificación de prueba a la vez"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/boton_oscuro"
+            android:textSize="14sp" />
+
+           <Button
+               android:id="@+id/buttonTestNotification"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/textView4"
+               android:layout_below="@+id/textView2"
+               android:layout_marginTop="19dp"
+               android:background="@android:color/transparent"
+               android:gravity="left|center_vertical"
+               android:text="Solicitar notificación"
+               android:textColor="@color/boton_oscuro"
+               android:textSize="22sp" />
+
+</RelativeLayout>

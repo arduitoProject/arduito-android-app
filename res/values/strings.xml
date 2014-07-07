@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- version de la app (usado en todos lados) -->
+    <string name="version_1">Version: 1.0</string>
+    <string name="version_2">1.0</string>
+
+    <!-- url de la camara -->
+    <string name="default_camURL"><![CDATA[http://arduito.no-ip.info/videostream.cgi?user=arduito&pwd=putoelquelee=&resolution=8&rate=0]]></string>
+
+    <!-- textos -->
+    <string name="app_name">Arduito</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Ardui2 system</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_splash">Splash Activity</string>
+    <string name="img">imagen menu</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_ver_accesos">Ultimos accesos registrados</string>
+    <string name="ult_accesos">Ultimos Accesos</string>
+    <string name="acceso">Accesos</string>
+    <string name="sensores">Sensores</string>
+    <string name="camara">Cámara</string>
+    <string name="configuracion">Configuración</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="tituloAcceso">Últimos accesos</string>
+    <string name="title_activity_sensores">Sensores</string>
+    <string name="title_activity_camara">CamaraActivity</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="desc">imagen del menu principal</string>
+    <string name="title_activity_android_jsonparsing">AndroidJSONParsingActivity</string>
+    <string name="title_activity_ayuda">Ayuda</string>
+    <string name="btnAyudaPin">Pin</string>
+    <string name="title_activity_ayuda_pin">Pin Info</string>
+    <string name="botonHistorico">Ultimas Alertas</string>
+    <string name="title_activity_historial">Ultimas Alertas</string>
+    <string name="img_content">descripcion de imagenes</string>
+    <string name="title_activity_ayuda_key">Ayuda Key</string>
+    <string name="title_activity_ayuda_arduito">Arduito Info</string>
+
+    <!-- textos configuracion -->
+    <string name="title_activity_configuracion">Configuracion</string>
+    <string name="btnMODPinTXT">Modificar PIN</string>
+    <string name="btnVerKeyGCM">Visualizar Key</string>
+    <string name="btnConfigAlerta">Notificaciónes</string>
+    <string name="title_activity_configuracion_key">Key dispositivo</string>
+    <string name="key_config_text">Este dispositivo tiene el siguiente código: </string>
+    <string name="title_activity_configuracion_notificaciones">Configuracion de Notificaciones</string>
+    <string name="checkSonido">Emitir sonido</string>
+    <string name="checkVibrar">Vibrar</string>
+
+    <!-- textos ayuda -->
+    <string name="ayuda_title_PIN">Validación usuario</string>
+    <string name="ayuda_text_PIN">La validación del usuario es una acción necesaria e importante para prevenir accesos no permitidos al sistema</string>
+    <string name="ayuda_title_arduito">Arduito</string>
+    <string name="ayuda_text_arduito_1">Aplicación móvil del sistema Arduito©2013 - Universidad Nacional de La Matanza (UNLaM)</string>
+    <string name="ayuda_title_keyGCM">Key Dispositivo</string>
+    <string name="ayuda_text_keyGCM">Es un código que identifica el dispositivo en el servidor. Sirve para que el sistema pueda enviar alertas a su dispositivo.</string>
+    <string name="ayuda_text_keyGCM_1">Desde configuración puede visualizarse este código solo para trazar eventuales errores de comunicación servidor/dispositivo.</string>
+
+    <!-- textos error -->
+    <string name="pinInvalido">PIN incorrecto (solo 4 caracteres). Desde configuración puede intentarlo nuevamente (codigo error: 500-M)</string>
+    <string name="errorTitle">Error!</string>
+    <string name="errorDescripcion">Existe un error al recuperar los datos, quizas la conexión no sea la adecuada para la solicitud (codigo error: 1000-M)</string>
+    <string name="title_activity_pelicula">Pelicula Activity</string>
+    <string name="title_activity_visualizar_camara">Visualizar Camara</string>
+    <string name="title_activity_configuracion_camara">Configuración de la cámara</string>
+    <string name="title_activity_login">Autentificación de usuario</string>
+    <string name="title_activity_ayuda_login_init">Ayuda</string>
+    <string name="title_activity_configurar_reset_usuario">Resetear Usuario</string>
+    <string name="title_activity_sensor_chart">Ultimas mediciones del sensor</string>
+    <string name="title_activity_test_notificacion">Solicitar envio notificación</string>
+    <string name="title_activity_alertas_simple_item">Alertas</string>
+    <string name="title_activity_configuracion_general">Configuracion General</string>
+    <string name="title_activity_login_set_domain">Configuracion inicial</string>
+    <string name="title_activity_listar_camaras">Camaras accesibles</string>
+
+</resources>

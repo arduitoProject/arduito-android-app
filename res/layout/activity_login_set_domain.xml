@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfiguracionGeneralActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Configuración"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewHOST_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="26dp"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="18sp"
+        android:text="Dirección servidor"/>
+
+    <EditText
+        android:id="@+id/editTextHOST_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewHOST_login"
+        android:layout_below="@+id/textViewHOST_login"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonGUARDAR_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextHOST_login"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:text="Guardar"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonCANCELAR_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonGUARDAR_login"
+        android:layout_alignBottom="@+id/buttonGUARDAR_login"
+        android:layout_alignParentRight="true"
+        android:text="Cancelar"
+        android:background="@android:color/transparent"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="24sp" />
+
+</RelativeLayout>

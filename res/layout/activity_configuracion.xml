@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfiguracionActivity" >
+
+    <Button
+        android:id="@+id/btnConfiguracionCamara"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnConfigGRAL"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:text="Cámara"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnConfigGRAL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnConfigKey"
+        android:layout_below="@+id/btnConfiguracionCamara"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:text="Configuracion general"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnConfigResetarUsuaario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnConfigGRAL"
+        android:layout_below="@+id/btnConfigGRAL"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:text="Resetear Usuario"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonPedirNotificacionPrueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnConfigResetarUsuaario"
+        android:layout_below="@+id/btnConfigResetarUsuaario"
+        android:layout_marginTop="39dp"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:text="Solicitar notificación prueba"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnConfigKey"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPedirNotificacionPrueba"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:background="@android:color/transparent"
+        android:gravity="left|center_vertical"
+        android:text="Código Notificación"
+        android:textColor="@color/boton_oscuro"
+        android:textSize="24sp" />
+
+</RelativeLayout>

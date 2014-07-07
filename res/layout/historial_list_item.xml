@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+		<!-- Name Label -->
+		
+		
+		<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	    
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="Sensor: " >
+        </TextView>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/verde_fluor"
+            android:textSize="16sp" 
+            android:textStyle="bold"
+            android:gravity="left"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris_claro" 
+            android:gravity="left"
+            android:text=" ( id: " >
+        </TextView>        
+        <TextView
+            android:id="@+id/idSensorOculto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris_claro" 
+            android:textSize="16sp"
+            android:gravity="left"/>
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris_claro" 
+            android:gravity="left"
+            android:text=" )" >
+        </TextView>        
+        </LinearLayout>
+        
+        
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="Ubicación: " >
+        </TextView>
+        <TextView
+            android:id="@+id/ubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris_claro" 
+            android:gravity="left">
+        </TextView>
+        <TextView
+            android:id="@+id/nroHabitacion_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris_claro" 
+            android:text=" (Hab.: "
+            android:gravity="left">
+        </TextView>
+        <TextView
+            android:id="@+id/nroHabitacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris_claro" 
+            android:gravity="left">
+        </TextView>
+        <TextView
+            android:id="@+id/nroHabitacion_ou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris_claro" 
+            android:text=")"
+            android:gravity="left">
+        </TextView>
+        </LinearLayout>
+        
+        
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="Cant. mediciones fuera rango : " >
+        </TextView>
+        <TextView
+            android:id="@+id/valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/verde_fluor"
+            android:paddingBottom="2dip">
+        </TextView>
+        <TextView
+            android:id="@+id/soloPAraESpacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/verde_fluor"
+            android:text=" "
+            android:paddingBottom="2dip">
+        </TextView>
+        <TextView
+            android:id="@+id/unidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/verde_fluor"
+            android:paddingBottom="2dip">
+        </TextView>
+        </LinearLayout>
+       
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5d5d5d"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:text="Cant. mediciones con warning : " >
+        </TextView>
+        <TextView
+            android:id="@+id/valor_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/verde_fluor"
+            android:paddingBottom="2dip">
+        </TextView>
+        <TextView
+            android:id="@+id/soloPAraESpacio_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/verde_fluor"
+            android:text=" "
+            android:paddingBottom="2dip">
+        </TextView>
+        <TextView
+            android:id="@+id/unidad_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/verde_fluor"
+            android:paddingBottom="2dip">
+        </TextView>
+        </LinearLayout>
+        
+ 
+    </LinearLayout>
+
+</LinearLayout>

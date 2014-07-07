@@ -1,0 +1,21 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="rojo">#ff0000</color>
+   	<color name="verde">#00ff00</color>
+   	<color name="verde_fluor">#43bd00</color>
+   	
+
+   		
+    <color name="Black">#000000</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="boton_oscuro">#2E9AFE</color>
+    <color name="boton_claro">#58D3F7</color>
+    <color name="gris_claro">#acacac</color>
+
+    
+    <color name="ExpandChildBackground">#FFAFABAB</color>
+    <color name="ExpandGroupBackground">#FF7C7C7C</color>
+
+
+</resources>
